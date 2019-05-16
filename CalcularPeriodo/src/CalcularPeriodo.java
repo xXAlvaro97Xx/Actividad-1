@@ -15,7 +15,12 @@ public class CalcularPeriodo {
 		System.out.println(calcularPeriodo("ALGO", fecha2));
 		
 		LocalDate fecha3 = LocalDate.of(2012, Month.JANUARY, 1);	 
-		System.out.println(calcularPeriodo("Supuesto FIN DEL MUNDO", fecha3));
+		System.out.println(calcularPeriodo("FIN DEL MUNDO", fecha3));
+		
+		//Creamos la fecha de salida de Minecraft
+		LocalDate fechaM = LocalDate.of(2009, Month.MAY, 17);	 
+		// Mostramos cuánto tiempo ha pasado
+		calcularPeriodo("La salida de Minecraft", fechaM);
 	}
 	
 	public static String calcularPeriodo(String nombre, LocalDate fecha) {
@@ -31,5 +36,6 @@ public class CalcularPeriodo {
         String texto = String.format(nombre + " ocurrió hace %d años, %d meses y %d días.", anyos, meses, dias);
         return texto;
     }
- 
+
 }
+
