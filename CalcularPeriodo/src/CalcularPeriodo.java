@@ -15,7 +15,7 @@ public class CalcularPeriodo {
 		System.out.println(calcularPeriodo("ALGO", fecha2));
 		
 		LocalDate fecha3 = LocalDate.of(2012, Month.JANUARY, 1);	 
-		System.out.println(calcularPeriodo("FIN DEL MUNDO", fecha3));
+		System.out.println(calcularPeriodo("Supuesto FIN DEL MUNDO", fecha3));
 	}
 	
 	public static String calcularPeriodo(String nombre, LocalDate fecha) {
